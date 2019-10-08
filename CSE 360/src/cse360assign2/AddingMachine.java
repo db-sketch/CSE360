@@ -3,7 +3,8 @@
  * Class ID: 70641
  * Description: This program uses several methods
  * to add and subtract integers from a total, which
- * initially starts at zero.
+ * initially starts at zero. Also, this program keeps
+ * track of each operation made to the total.
  */
 
 package cse360assign2;
@@ -21,18 +22,20 @@ public class AddingMachine
 {
 
 	private int total;
+	private String history;
 	
 	/*
-	 * This is the constructor method
+	 * This is the constructor method. 
+	 * Also resets the history of operations.
 	 */
 	
 	public AddingMachine () 
 	{
-		total = 0;  // not needed - included for clarity
+		history = "0";
 	}
 	
 	/*
-	 * This method returns the current total
+	 * This method returns the current total.
 	 */
 	
 	public int getTotal () 
@@ -42,40 +45,48 @@ public class AddingMachine
 	
 	/*
 	 * This method will add the parameter value 
-	 * to the total
+	 * to the total, and add the operation to 
+	 * the history.
 	 */
 	
 	public void add (int value) 
 	{
+		total += value;
 		
+		history += " + " + value;
 	}
 	
 	/*
 	 * This method will subtract the parameter
-	 * value from the total
+	 * value from the total, and add the operation
+	 * to the history
 	 */
 	
 	public void subtract (int value) 
 	{
+		total -= value;
 		
+		history += " - " + value;
 	}
 	
 	/*
-	 * This method will print all of the changes
-	 * made to the total
+	 * This method will print all of the operations
+	 * done to the total
 	 */
 		
 	public String toString () 
 	{
-		return "";
+		return history;
 	}
 	
 	/*
-	 * This method will reset the total to 0.
+	 * This method will reset the total to 0 and 
+	 * reset the history to 0.
 	 */
 
 	public void clear() 
 	{
-	
+		total = 0;
+		history = "0";
 	}
 }
