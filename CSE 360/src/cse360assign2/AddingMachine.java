@@ -74,7 +74,7 @@ public class AddingMachine
 	 * done to the total
 	 */
 		
-	public String toString () 
+	public String toString() 
 	{
 		return history;
 	}
