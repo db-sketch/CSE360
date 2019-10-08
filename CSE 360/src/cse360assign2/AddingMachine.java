@@ -17,7 +17,8 @@ package cse360assign2;
  * using the clear method.
  */
 
-public class AddingMachine {
+public class AddingMachine 
+{
 
 	private int total;
 	
@@ -25,7 +26,8 @@ public class AddingMachine {
 	 * This is the constructor method
 	 */
 	
-	public AddingMachine () {
+	public AddingMachine () 
+	{
 		total = 0;  // not needed - included for clarity
 	}
 	
@@ -33,8 +35,9 @@ public class AddingMachine {
 	 * This method returns the current total
 	 */
 	
-	public int getTotal () {
-		return 0;
+	public int getTotal () 
+	{
+		return total;
 	}
 	
 	/*
@@ -42,7 +45,8 @@ public class AddingMachine {
 	 * to the total
 	 */
 	
-	public void add (int value) {
+	public void add (int value) 
+	{
 		
 	}
 	
@@ -51,7 +55,8 @@ public class AddingMachine {
 	 * value from the total
 	 */
 	
-	public void subtract (int value) {
+	public void subtract (int value) 
+	{
 		
 	}
 	
@@ -60,7 +65,8 @@ public class AddingMachine {
 	 * made to the total
 	 */
 		
-	public String toString () {
+	public String toString () 
+	{
 		return "";
 	}
 	
@@ -68,7 +74,8 @@ public class AddingMachine {
 	 * This method will reset the total to 0.
 	 */
 
-	public void clear() {
+	public void clear() 
+	{
 	
 	}
 }
